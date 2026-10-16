@@ -1,0 +1,10 @@
+[sw_serial] n=8000 m=8000 time=0.3208 s max_score=3579
+run=1 elapsed=0.32 s
+[sw_serial] n=8000 m=8000 time=0.2510 s max_score=3579
+run=2 elapsed=0.25 s
+[sw_serial] n=8000 m=8000 time=0.2514 s max_score=3579
+run=3 elapsed=0.25 s
+[sw_serial] n=8000 m=8000 time=0.2633 s max_score=3579
+run=4 elapsed=0.26 s
+[sw_serial] n=8000 m=8000 time=0.2481 s max_score=3579
+run=5 elapsed=0.24 s

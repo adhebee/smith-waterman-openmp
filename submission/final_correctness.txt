@@ -1,0 +1,5 @@
+=== SERIAL: 8000 x 8000 ===
+[sw_serial] n=8000 m=8000 time=0.4567 s max_score=3579
+
+=== PARALLEL: 4 THREADS, 8000 x 8000 ===
+[sw_parallel] n=8000 m=8000 time=0.193431 max_score=3579 threads=4

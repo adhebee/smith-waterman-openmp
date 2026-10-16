@@ -1,0 +1,38 @@
+sw_serial.c:45:23: missed: couldn't vectorize loop
+sw_serial.c:45:53: missed: statement clobbers memory: _1 = rand ();
+sw_serial.c:42:13: note: vectorized 0 loops in function.
+sw_serial.c:44:5: missed: statement clobbers memory: srand (seed_10(D));
+sw_serial.c:45:53: missed: statement clobbers memory: _1 = rand ();
+sw_serial.c:46:1: note: ***** Analysis failed with vector mode V8SI
+sw_serial.c:46:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+sw_serial.c:36:23: missed: couldn't vectorize loop
+sw_serial.c:36:34: missed: statement clobbers memory: free (_42);
+sw_serial.c:29:23: missed: couldn't vectorize loop
+sw_serial.c:29:23: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+sw_serial.c:30:27: missed: couldn't vectorize loop
+sw_serial.c:32:65: missed: not vectorized, possible dependence between data-refs *_25 and *_38
+sw_serial.c:30:27: note: ***** Analysis failed with vector mode V32QI
+sw_serial.c:30:27: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+sw_serial.c:26:23: missed: couldn't vectorize loop
+sw_serial.c:26:41: missed: statement clobbers memory: _9 = calloc (_107, 4);
+sw_serial.c:24:5: note: vectorized 0 loops in function.
+sw_serial.c:25:15: missed: statement clobbers memory: H_57 = malloc (_3);
+sw_serial.c:26:41: missed: statement clobbers memory: _9 = calloc (_107, 4);
+sw_serial.c:36:34: missed: statement clobbers memory: free (_42);
+sw_serial.c:37:5: missed: statement clobbers memory: free (H_57);
+sw_serial.c:38:12: note: ***** Analysis failed with vector mode V4DI
+sw_serial.c:38:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+/usr/include/stdlib.h:364:16: missed: statement clobbers memory: _27 = strtol (_1, 0B, 10);
+/usr/include/stdlib.h:364:16: missed: statement clobbers memory: _29 = strtol (_2, 0B, 10);
+sw_serial.c:52:18: missed: statement clobbers memory: seq1_14 = malloc (_3);
+sw_serial.c:53:18: missed: statement clobbers memory: seq2_16 = malloc (_4);
+sw_serial.c:54:5: missed: statement clobbers memory: gen_sequence (seq1_14, iftmp.1_41, 42);
+sw_serial.c:55:5: missed: statement clobbers memory: gen_sequence (seq2_16, iftmp.2_9, 1337);
+sw_serial.c:57:21: missed: statement clobbers memory: start_20 = clock ();
+sw_serial.c:58:17: missed: statement clobbers memory: score_22 = smith_waterman_serial (seq1_14, seq2_16, iftmp.1_41, iftmp.2_9);
+sw_serial.c:59:19: missed: statement clobbers memory: end_24 = clock ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:112:10: missed: statement clobbers memory: __printf_chk (1, "[sw_serial] n=%d m=%d time=%.4f s max_score=%d\n", iftmp.1_41, iftmp.2_9, _7, score_22);
+sw_serial.c:64:5: missed: statement clobbers memory: free (seq1_14);
+sw_serial.c:64:17: missed: statement clobbers memory: free (seq2_16);
+sw_serial.c:64:17: note: ***** Analysis failed with vector mode V4DI
+sw_serial.c:64:17: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI

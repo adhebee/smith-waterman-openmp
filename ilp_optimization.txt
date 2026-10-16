@@ -1,0 +1,7 @@
+sw_serial.c:32:23: optimized:  Inlining max4/39 into smith_waterman_serial/40.
+sw_serial.c:61:5: optimized:   Inlining printf/15 into main/42 (always_inline).
+sw_serial.c:50:26: optimized:   Inlining atoi/23 into main/42 (always_inline).
+sw_serial.c:49:26: optimized:   Inlining atoi/23 into main/42 (always_inline).
+sw_serial.c:45:23: optimized: loop unrolled 3 times
+sw_serial.c:36:23: optimized: loop unrolled 7 times
+sw_serial.c:26:23: optimized: loop unrolled 7 times

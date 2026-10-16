@@ -1,0 +1,20 @@
+# started on Tue Oct 13 23:54:23 2026
+
+
+ Performance counter stats for './sw_parallel 8000 8000':
+
+         761189273      task-clock:u                     #    3.836 CPUs utilized             
+                 0      context-switches:u               #    0.000 /sec                      
+                 0      cpu-migrations:u                 #    0.000 /sec                      
+             70598      page-faults:u                    #   92.747 K/sec                     
+        1278013370      instructions:u                   #    0.66  insn per cycle            
+        1923412295      cycles:u                         #    2.527 GHz                       
+          32113456      branches:u                       #   42.189 M/sec                     
+             80213      branch-misses:u                  #    0.25% of all branches           
+
+       0.198452821 seconds time elapsed
+
+       0.578391000 seconds user
+       0.183489000 seconds sys
+
+

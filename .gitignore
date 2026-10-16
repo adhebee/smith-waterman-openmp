@@ -1,0 +1,21 @@
+# Compiled executables
+sw_serial
+sw_parallel
+sw_parallel_simd
+sw_parallel_tlp
+sw_parallel_wavefront
+
+# Object and library files
+*.o
+*.a
+*.so
+
+# Temporary files
+*.tmp
+*.log
+core
+
+# Git and editor files
+.DS_Store
+.vscode/
+.idea/

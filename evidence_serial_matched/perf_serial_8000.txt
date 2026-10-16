@@ -1,0 +1,11 @@
+[sw_serial] n=8000 m=8000 time=1.7053 s max_score=3579
+
+ Performance counter stats for './sw_serial 8000 8000':
+
+        1253066516      instructions:u                   #    1.59  insn per cycle
+         786784009      cycles:u
+
+       1.676117489 seconds time elapsed
+
+       0.196424000 seconds user
+       1.514104000 seconds sys

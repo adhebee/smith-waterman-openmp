@@ -1,0 +1,11 @@
+[sw_parallel] n=8000 m=8000 time=0.173996 max_score=3579 threads=4
+
+ Performance counter stats for './sw_parallel 8000 8000':
+
+        1296953172      instructions:u                   #    0.66  insn per cycle
+        1976347403      cycles:u
+
+       0.198107464 seconds time elapsed
+
+       0.499451000 seconds user
+       0.259877000 seconds sys

@@ -1,0 +1,20 @@
+# started on Tue Oct 13 23:54:22 2026
+
+
+ Performance counter stats for './sw_serial 8000 8000':
+
+         280448284      task-clock:u                     #    0.989 CPUs utilized             
+                 0      context-switches:u               #    0.000 /sec                      
+                 0      cpu-migrations:u                 #    0.000 /sec                      
+             62615      page-faults:u                    #  223.268 K/sec                     
+        1253066071      instructions:u                   #    1.59  insn per cycle            
+         788072900      cycles:u                         #    2.810 GHz                       
+         145160155      branches:u                       #  517.600 M/sec                     
+          12262037      branch-misses:u                  #    8.45% of all branches           
+
+       0.283428183 seconds time elapsed
+
+       0.202222000 seconds user
+       0.079303000 seconds sys
+
+

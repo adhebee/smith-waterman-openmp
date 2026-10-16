@@ -1,0 +1,2 @@
+sw_parallel.c:73:13: optimized: basic block part vectorized using 32 byte vectors
+sw_parallel.c:73:13: optimized: basic block part vectorized using 32 byte vectors

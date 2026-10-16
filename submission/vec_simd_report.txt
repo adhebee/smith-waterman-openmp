@@ -1,0 +1,142 @@
+sw_parallel_simd.c:75:29: missed: couldn't vectorize loop
+sw_parallel_simd.c:75:29: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+sw_parallel_simd.c:88:38: missed: couldn't vectorize loop
+sw_parallel_simd.c:73:13: missed: not vectorized: number of iterations cannot be computed.
+sw_parallel_simd.c:90:21: missed: couldn't vectorize loop
+sw_parallel_simd.c:90:21: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+sw_parallel_simd.c:105:41: missed: couldn't vectorize loop
+sw_parallel_simd.c:105:41: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+sw_parallel_simd.c:112:29: optimized: loop vectorized using 32 byte vectors
+sw_parallel_simd.c:115:29: missed: couldn't vectorize loop
+sw_parallel_simd.c:115:29: missed: not vectorized: control flow in loop.
+sw_parallel_simd.c:112:29: optimized: loop vectorized using 32 byte vectors
+sw_parallel_simd.c:112:29: optimized: loop vectorized using 16 byte vectors
+sw_parallel_simd.c:105:41: missed: couldn't vectorize loop
+sw_parallel_simd.c:105:41: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+sw_parallel_simd.c:112:29: optimized: loop vectorized using 32 byte vectors
+sw_parallel_simd.c:115:29: optimized: loop vectorized using 32 byte vectors
+sw_parallel_simd.c:112:29: optimized: loop vectorized using 32 byte vectors
+sw_parallel_simd.c:112:29: optimized: loop vectorized using 16 byte vectors
+sw_parallel_simd.c:73:13: note: vectorized 5 loops in function.
+sw_parallel_simd.c:73:13: missed: statement clobbers memory: _40 = __builtin_GOMP_single_start ();
+sw_parallel_simd.c:73:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+sw_parallel_simd.c:73:13: missed: statement clobbers memory: _127 = __atomic_load_4 (pretmp_230, 0);
+sw_parallel_simd.c:73:13: missed: statement clobbers memory: _131 = __sync_val_compare_and_swap_4 (pretmp_230, _16, _129);
+sw_parallel_simd.c:73:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+sw_parallel_simd.c:73:13: missed: statement clobbers memory: _135 = __builtin_GOMP_single_start ();
+sw_parallel_simd.c:73:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+sw_parallel_simd.c:125:43: note: ***** Analysis failed with vector mode V4DI
+sw_parallel_simd.c:125:43: note: ***** The result for vector mode V32QI would be the same
+sw_parallel_simd.c:125:43: note: ***** Re-trying analysis with vector mode V16QI
+sw_parallel_simd.c:125:43: note: ***** Analysis failed with vector mode V16QI
+sw_parallel_simd.c:125:43: note: ***** Re-trying analysis with vector mode V8QI
+sw_parallel_simd.c:125:43: note: ***** Analysis failed with vector mode V8QI
+sw_parallel_simd.c:25:23: missed: couldn't vectorize loop
+sw_parallel_simd.c:26:27: missed: statement clobbers memory: _1 = rand ();
+sw_parallel_simd.c:20:13: note: vectorized 0 loops in function.
+sw_parallel_simd.c:24:5: missed: statement clobbers memory: srand (seed_10(D));
+sw_parallel_simd.c:26:27: missed: statement clobbers memory: _1 = rand ();
+sw_parallel_simd.c:27:1: note: ***** Analysis failed with vector mode V8SI
+sw_parallel_simd.c:27:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+sw_parallel_simd.c:29:5: note: vectorized 0 loops in function.
+/usr/include/stdlib.h:364:16: missed: statement clobbers memory: _62 = strtol (_1, 0B, 10);
+/usr/include/stdlib.h:364:16: missed: statement clobbers memory: _64 = strtol (_2, 0B, 10);
+sw_parallel_simd.c:51:18: missed: statement clobbers memory: seq1_29 = malloc (_7);
+sw_parallel_simd.c:52:18: missed: statement clobbers memory: seq2_31 = malloc (_8);
+sw_parallel_simd.c:53:14: missed: statement clobbers memory: H_33 = calloc (_9, 4);
+sw_parallel_simd.c:63:5: missed: statement clobbers memory: generate_sequence (seq1_29, n_75, 42);
+sw_parallel_simd.c:64:5: missed: statement clobbers memory: generate_sequence (seq2_31, m_74, 1337);
+sw_parallel_simd.c:71:20: missed: statement clobbers memory: start_39 = omp_get_wtime ();
+sw_parallel_simd.c:29:5: missed: statement clobbers memory: __builtin_GOMP_parallel (main._omp_fn.0, &.omp_data_o.12, 0, 0);
+sw_parallel_simd.c:145:22: missed: statement clobbers memory: _17 = omp_get_wtime ();
+sw_parallel_simd.c:147:5: missed: statement clobbers memory: _18 = omp_get_max_threads ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:112:10: missed: statement clobbers memory: __printf_chk (1, "[sw_parallel] n=%d m=%d time=%.6f max_score=%d threads=%d\n", n_75, m_74, elapsed_54, maxScore_51, _18);
+sw_parallel_simd.c:150:5: missed: statement clobbers memory: free (seq1_29);
+sw_parallel_simd.c:151:5: missed: statement clobbers memory: free (seq2_31);
+sw_parallel_simd.c:152:5: missed: statement clobbers memory: free (H_33);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:105:10: missed: statement clobbers memory: __builtin_fwrite ("Memory allocation failed.\n", 1, 26, stderr.2_14);
+sw_parallel_simd.c:57:9: missed: statement clobbers memory: free (seq1_29);
+sw_parallel_simd.c:58:9: missed: statement clobbers memory: free (seq2_31);
+sw_parallel_simd.c:59:9: missed: statement clobbers memory: free (H_33);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:105:10: missed: statement clobbers memory: __builtin_fwrite ("Matrix size is too large.\n", 1, 26, stderr.1_10);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:105:10: missed: statement clobbers memory: __builtin_fwrite ("Sequence lengths must be positive.\n", 1, 35, stderr.0_6);
+sw_parallel_simd.c:73:13: note: ***** Analysis succeeded with vector mode V4DI
+sw_parallel_simd.c:73:13: note: SLPing BB part
+sw_parallel_simd.c:73:13: note: Costing subgraph: 
+sw_parallel_simd.c:73:13: note: node 0x1ba8b968 (max_nunits=4, refcnt=1)
+sw_parallel_simd.c:73:13: note: op template: .omp_data_o.12.n = n_75;
+sw_parallel_simd.c:73:13: note: 	stmt 0 .omp_data_o.12.n = n_75;
+sw_parallel_simd.c:73:13: note: 	stmt 1 .omp_data_o.12.m = m_74;
+sw_parallel_simd.c:73:13: note: 	stmt 2 .omp_data_o.12.tile_rows = tile_rows_36;
+sw_parallel_simd.c:73:13: note: 	stmt 3 .omp_data_o.12.tile_cols = tile_cols_37;
+sw_parallel_simd.c:73:13: note: 	children 0x1ba8b9e0
+sw_parallel_simd.c:73:13: note: node (external) 0x1ba8b9e0 (max_nunits=1, refcnt=1)
+sw_parallel_simd.c:73:13: note: 	{ n_75, m_74, tile_rows_36, tile_cols_37 }
+sw_parallel_simd.c:73:13: note: Cost model analysis: 
+sw_parallel_simd.c:73:13: note: Cost model analysis for part in loop 0:
+  Vector cost: 32
+  Scalar cost: 48
+sw_parallel_simd.c:73:13: note: Basic block will be vectorized using SLP
+sw_parallel_simd.c:73:13: note: Vectorizing SLP tree:
+sw_parallel_simd.c:73:13: note: node 0x1ba8b968 (max_nunits=4, refcnt=1)
+sw_parallel_simd.c:73:13: note: op template: .omp_data_o.12.n = n_75;
+sw_parallel_simd.c:73:13: note: 	stmt 0 .omp_data_o.12.n = n_75;
+sw_parallel_simd.c:73:13: note: 	stmt 1 .omp_data_o.12.m = m_74;
+sw_parallel_simd.c:73:13: note: 	stmt 2 .omp_data_o.12.tile_rows = tile_rows_36;
+sw_parallel_simd.c:73:13: note: 	stmt 3 .omp_data_o.12.tile_cols = tile_cols_37;
+sw_parallel_simd.c:73:13: note: 	children 0x1ba8b9e0
+sw_parallel_simd.c:73:13: note: node (external) 0x1ba8b9e0 (max_nunits=1, refcnt=1)
+sw_parallel_simd.c:73:13: note: 	{ n_75, m_74, tile_rows_36, tile_cols_37 }
+sw_parallel_simd.c:73:13: note: ------>vectorizing SLP node starting from: .omp_data_o.12.n = n_75;
+sw_parallel_simd.c:73:13: note: vect_is_simple_use: operand m_74 = PHI <m_20(15), 4000(13)>, type of def: internal
+sw_parallel_simd.c:73:13: note: vect_is_simple_use: operand _15 >> 6, type of def: internal
+sw_parallel_simd.c:73:13: note: vect_is_simple_use: operand _16 >> 6, type of def: internal
+sw_parallel_simd.c:73:13: note: transform store. ncopies = 1
+sw_parallel_simd.c:73:13: note: create vector_type-pointer variable to type: vector(4) int  vectorizing a pointer ref: .omp_data_o.12.n
+sw_parallel_simd.c:73:13: note: created &.omp_data_o.12.n
+sw_parallel_simd.c:73:13: note: add new stmt: MEM <vector(4) int> [(int *)&.omp_data_o.12 + 32B] = _86;
+sw_parallel_simd.c:73:13: note: vectorizing stmts using SLP.
+sw_parallel_simd.c:73:13: optimized: basic block part vectorized using 32 byte vectors
+sw_parallel_simd.c:73:13: note: Costing subgraph: 
+sw_parallel_simd.c:73:13: note: node 0x1ba8ba58 (max_nunits=2, refcnt=1)
+sw_parallel_simd.c:73:13: note: op template: .omp_data_o.12.maxScore = 0;
+sw_parallel_simd.c:73:13: note: 	stmt 0 .omp_data_o.12.maxScore = 0;
+sw_parallel_simd.c:73:13: note: 	stmt 1 .omp_data_o.12.diag_max = 0;
+sw_parallel_simd.c:73:13: note: 	children 0x1ba8bad0
+sw_parallel_simd.c:73:13: note: node (constant) 0x1ba8bad0 (max_nunits=1, refcnt=1)
+sw_parallel_simd.c:73:13: note: 	{ 0, 0 }
+sw_parallel_simd.c:73:13: note: Cost model analysis: 
+sw_parallel_simd.c:73:13: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 24
+sw_parallel_simd.c:73:13: missed: not vectorized: vectorization is not profitable.
+sw_parallel_simd.c:73:13: note: Costing subgraph: 
+sw_parallel_simd.c:73:13: note: node 0x1ba8bb48 (max_nunits=2, refcnt=1)
+sw_parallel_simd.c:73:13: note: op template: .omp_data_o.12.H = H_33;
+sw_parallel_simd.c:73:13: note: 	stmt 0 .omp_data_o.12.H = H_33;
+sw_parallel_simd.c:73:13: note: 	stmt 1 .omp_data_o.12.seq1 = seq1_29;
+sw_parallel_simd.c:73:13: note: 	children 0x1ba8bbc0
+sw_parallel_simd.c:73:13: note: node (external) 0x1ba8bbc0 (max_nunits=1, refcnt=1)
+sw_parallel_simd.c:73:13: note: 	{ H_33, seq1_29 }
+sw_parallel_simd.c:73:13: note: Cost model analysis: 
+sw_parallel_simd.c:73:13: note: Cost model analysis for part in loop 0:
+  Vector cost: 24
+  Scalar cost: 24
+sw_parallel_simd.c:73:13: note: Vectorizing SLP tree:
+sw_parallel_simd.c:73:13: note: node 0x1ba8bb48 (max_nunits=2, refcnt=1)
+sw_parallel_simd.c:73:13: note: op template: .omp_data_o.12.H = H_33;
+sw_parallel_simd.c:73:13: note: 	stmt 0 .omp_data_o.12.H = H_33;
+sw_parallel_simd.c:73:13: note: 	stmt 1 .omp_data_o.12.seq1 = seq1_29;
+sw_parallel_simd.c:73:13: note: 	children 0x1ba8bbc0
+sw_parallel_simd.c:73:13: note: node (external) 0x1ba8bbc0 (max_nunits=1, refcnt=1)
+sw_parallel_simd.c:73:13: note: 	{ H_33, seq1_29 }
+sw_parallel_simd.c:73:13: note: ------>vectorizing SLP node starting from: .omp_data_o.12.H = H_33;
+sw_parallel_simd.c:73:13: note: vect_is_simple_use: operand malloc (_7), type of def: internal
+sw_parallel_simd.c:73:13: note: conflicting alias set types.
+sw_parallel_simd.c:73:13: note: transform store. ncopies = 1
+sw_parallel_simd.c:73:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.12.H
+sw_parallel_simd.c:73:13: note: created &.omp_data_o.12.H
+sw_parallel_simd.c:73:13: note: add new stmt: MEM <vector(2) long unsigned int> [(void *)&.omp_data_o.12 + 8B] = _80;
+sw_parallel_simd.c:73:13: note: vectorizing stmts using SLP.
+sw_parallel_simd.c:73:13: optimized: basic block part vectorized using 32 byte vectors
+sw_parallel_simd.c:73:13: note: ***** The result for vector mode V32QI would be the same
